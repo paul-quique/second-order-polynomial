@@ -11,8 +11,9 @@ public class Main {
 		 * 		= 36 - 6 + 1
 		 * 		= 31
 		 * We will check : */
-		Panel pan = new Panel(f, "#DBFF33"); //this should be yellow (the background)
-		Window win = new Window(1080, 720, pan, "Second Order Polynomial Curve (-2x^2 + 4x + 8)");
+		Panel pan = new Panel(f, "#ffffff"); //this should be yellow (the background)
+		KeyManager keyManager = new KeyManager(f, pan);
+		Window win = new Window(1080, 720, pan, "Second Order Polynomial Curve (-2x^2 + 4x + 8)", keyManager);
 		System.out.println("y = " + win.getHeight() + "x = " + win.getWidth());
 	}
 
